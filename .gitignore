@@ -1,6 +1,6 @@
 .env
 /etc
-/etc/__pycache__
+/ext/__pycache__
 /Include
 /Lib
 /Scripts
