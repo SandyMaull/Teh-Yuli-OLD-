@@ -29,14 +29,11 @@ class music(commands.Cog):
             else:
                 await ctx.voice_client.move_to(voice_channel)
         else:
-            return
+            await ctx.reply("Fitur music pada bot ini sedang dimatikan oleh developer.")
 
     @commands.command()
     async def disconnect(self,ctx):
-        if checkdata():
-            await ctx.voice_client.disconnect()
-        else:
-            return
+        await ctx.voice_client.disconnect()
 
     @commands.command()
     async def play(self, ctx, url):
@@ -58,7 +55,8 @@ class music(commands.Cog):
             # except:
             #     await ctx.send("An error occurred, please check the backend services!")
         else:
-            return
+            await ctx.reply("Fitur music pada bot ini sedang dimatikan oleh developer.")
+
 
     @commands.command()
     async def pause(self, ctx):
@@ -66,7 +64,8 @@ class music(commands.Cog):
             await ctx.send("paused")
             await ctx.voice_client.pause()
         else:
-            return
+            await ctx.reply("Fitur music pada bot ini sedang dimatikan oleh developer.")
+
 
     @commands.command()
     async def resume(self, ctx):
@@ -74,7 +73,8 @@ class music(commands.Cog):
             await ctx.send("resume")
             await ctx.voice_client.resume()
         else:
-            return
+            await ctx.reply("Fitur music pada bot ini sedang dimatikan oleh developer.")
+
 
 
 def setup(client):

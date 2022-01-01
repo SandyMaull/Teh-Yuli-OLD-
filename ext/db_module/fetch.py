@@ -18,7 +18,6 @@ def one(table, field, value):
             i += 1
         return json.dumps(column_name)
     except:
-        print('Error when fetching data!')
         return False
 
 def many(table, field, value):
@@ -41,7 +40,6 @@ def many(table, field, value):
             g += 1
         return json.dumps(finaldata)
     except:
-        print('Error when fetching data!')
         return False
 
 def all(table):
@@ -64,5 +62,4 @@ def all(table):
             g += 1
         return json.dumps(finaldata)
     except:
-        print('Error when fetching data!')
         return False

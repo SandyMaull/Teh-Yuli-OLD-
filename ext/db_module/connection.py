@@ -12,7 +12,6 @@ def connect():
     )
 
     if db.is_connected():
-        print("Database Connected!")
         return db
     else:
         print("Connection Failed!")
