@@ -48,8 +48,8 @@ class music(commands.Cog):
                 info = ydl.extract_info(url, download=False)
                 url2 = info['formats'][0]['url']
                 #   exec_path = os.path.isfile('./Include/ffmpeg.exe')
-                source = await discord.FFmpegOpusAudio.from_probe(url2, **FFMPEG_OPTIONS, executable='./Include/ffmpeg.exe')
-                # source = await discord.FFmpegOpusAudio.from_probe(url2, **FFMPEG_OPTIONS)
+                # source = await discord.FFmpegOpusAudio.from_probe(url2, **FFMPEG_OPTIONS, executable='./Include/ffmpeg.exe')
+                source = await discord.FFmpegOpusAudio.from_probe(url2, **FFMPEG_OPTIONS)
                 #   vc.play(discord.FFmpegPCMAudio(executable=exec_path, source=source))
                 vc.play(source)
             # except:
