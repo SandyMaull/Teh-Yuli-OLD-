@@ -1,4 +1,4 @@
-# TehYuli-OLD-
+# Teh-Yuli-OLD-
 Discord BOT writting in Python Language<br>A new one is moved to https://github.com/Anti-Bang-Cat/Teh-Yuli , You may need contact me to get the access.
 Discord: Twilight [０, The Fool]#8887
 
